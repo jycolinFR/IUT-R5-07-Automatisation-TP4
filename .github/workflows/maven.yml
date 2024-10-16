@@ -30,9 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: |
-        cd calc 
-        mvn -B package --file pom.xml
+      run: mvn -B package --file pom.xml
     - name: JY commmit et push
       run: |
         git config --global user.name jycolinFR
